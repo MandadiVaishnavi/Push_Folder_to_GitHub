@@ -21,3 +21,22 @@
      git push -u origin main
      ```
 7. **Verify on GitHub**
+
+
+# Troubleshooting
+**If you encounter issues while pushing:**
+
+**Unable to push?**
+```
+git pull origin main
+```
+This command fetches and merges changes from the remote repository.
+
+**Error: fatal: refusing to merge unrelated histories:**
+```
+git pull origin main --allow-unrelated-histories
+```
+Then try pushing your files again using:
+```
+git push -u origin main
+```
